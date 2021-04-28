@@ -39,27 +39,27 @@ public class KassonMainClass
 	
 		
 		//Declare/Initialize variables 
-		String userName = " ";    	    //user's name 
-		String itemName = " ";		      //item name
-		String discountName = " ";		  //discount name
-		char rateSelection = ' ';		    //uses a space between ' ' as default
-		char itemSelection = ' ';		    //uses a space between ' ' as default
-		int howMany = 0;			          //Quantity of the product
-		int memberCount = 0;			      //count of members
-		int seniorCount = 0;			      //count of seniors 
-		int noDiscountCount = 0;		    //count of no discount
-		int premiumCount = 0;			      //count of time option was selected
-		int specialCount = 0;			      //count of time option was selected
-		int basicCount = 0;				      //count of time option was selected 
-		double itemPrice = 0.0;	     	  //amount of the price before discount
-		double discountRate = 0.0;		  //rate based on  menu selection
-		double discountAmount = 0.0;    //amount of discount
-		double discountPrice = 0.0;	    //amount of price with discount applied
-		double subTotal = 0.0;	        //price before tax is applied
-		double tax = 0.0;		            //tax applied
-		double totalCost = 0.0;			    //final cost of transaction
-		double grandTotal = 0.0;		    //grand cost, sum of all totals
-		double purchaseAmt = 0.0;		    //amount of purchase 
+		String userName = " ";    	 //user's name 
+		String itemName = " ";		 //item name
+		String discountName = " ";	 //discount name
+		char rateSelection = ' ';	 //uses a space between ' ' as default
+		char itemSelection = ' ';	 //uses a space between ' ' as default
+		int howMany = 0;	         //Quantity of the product
+		int memberCount = 0;	      	 //count of members
+		int seniorCount = 0;	     	 //count of seniors 
+		int noDiscountCount = 0;	 //count of no discount
+		int premiumCount = 0;	      	 //count of time option was selected
+		int specialCount = 0;	      	 //count of time option was selected
+		int basicCount = 0; 		 //count of time option was selected 
+		double itemPrice = 0.0;	     	 //amount of the price before discount
+		double discountRate = 0.0;	 //rate based on  menu selection
+		double discountAmount = 0.0;     //amount of discount
+		double discountPrice = 0.0;	 //amount of price with discount applied
+		double subTotal = 0.0;	         //price before tax is applied
+		double tax = 0.0;	         //tax applied
+		double totalCost = 0.0;	    	 //final cost of transaction
+		double grandTotal = 0.0;	 //grand cost, sum of all totals
+		double purchaseAmt = 0.0;	 //amount of purchase 
 		
 		//Welcome Message
 		displayWelcomeBanner(); 
