@@ -12,22 +12,22 @@ import java.util.Scanner;
 public class KassonMainClass 
 {
 	//Declare/Initialize constants
-	public static final double TAX_RATE = 0.075;					 			            //fixed tax rate
-	public static final String DISCOUNT_NAME_MEMBER = "Member"; 	 			    //constant, Member
-	public static final String DISCOUNT_NAME_SENIOR = "Senior";	 				    //constant, Senior
-	public static final String DISCOUNT_NAME_NONE = "No Discount"; 			    //constant, No Discount
-	public static final String DISCOUNT_NAME_QUIT = "Quit"; 		 			      //constant, Quit
-	public static final double DISCOUNT_RATE_MEMBER = 0.15;		 				      //constant, 0.15 rate
-	public static final double DISCOUNT_RATE_SENIOR = 0.25;		 				      //constant, 0.25 rate
-	public static final double DISCOUNT_RATE_NONE = 0.0;			 			        //constant, 0.0 no rate
-	public static final String ITEM_NAME_PREMIUM = "Premium Insurance"; 		//constant, Premium Insurance
-	public static final String ITEM_NAME_SPECIAL = "Special Insurance"; 		//constant, Special Insurance
-	public static final String ITEM_NAME_BASIC = "Basic Insurance";     		//constant, Basic Insurance
-	public static final String ITEM_NAME_RETURN = "Return to Main Menu";		//constant, Return to main menu
-	public static final double ITEM_PRICE_PREMIUM = 55.95;						      //constant, $55.95 price
-	public static final double ITEM_PRICE_SPECIAL = 24.95;						      //constant, $24.95 price
-	public static final double ITEM_PRICE_BASIC = 15.95;						        //constant, $15.95 price
-	public static final int RESET_VALUE = 0;									              //constant, reset at 0
+	public static final double TAX_RATE = 0.075;					 	//fixed tax rate
+	public static final String DISCOUNT_NAME_MEMBER = "Member"; 	 			//constant, Member
+	public static final String DISCOUNT_NAME_SENIOR = "Senior";	 			//constant, Senior
+	public static final String DISCOUNT_NAME_NONE = "No Discount"; 			    	//constant, No Discount
+	public static final String DISCOUNT_NAME_QUIT = "Quit"; 		 	      	//constant, Quit
+	public static final double DISCOUNT_RATE_MEMBER = 0.15;		 		      	//constant, 0.15 rate
+	public static final double DISCOUNT_RATE_SENIOR = 0.25;		 			//constant, 0.25 rate
+	public static final double DISCOUNT_RATE_NONE = 0.0;			 		//constant, 0.0 no rate
+	public static final String ITEM_NAME_PREMIUM = "Premium Insurance"; 			//constant, Premium Insurance
+	public static final String ITEM_NAME_SPECIAL = "Special Insurance"; 			//constant, Special Insurance
+	public static final String ITEM_NAME_BASIC = "Basic Insurance";     			//constant, Basic Insurance
+	public static final String ITEM_NAME_RETURN = "Return to Main Menu";			//constant, Return to main menu
+	public static final double ITEM_PRICE_PREMIUM = 55.95;					//constant, $55.95 price
+	public static final double ITEM_PRICE_SPECIAL = 24.95;					//constant, $24.95 price
+	public static final double ITEM_PRICE_BASIC = 15.95;					//constant, $15.95 price
+	public static final int RESET_VALUE = 0;						 //constant, reset at 0
 
 	//Start of main method
 	public static void main(String[] args)
