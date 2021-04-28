@@ -158,10 +158,10 @@ public class KassonMainClass
 				
 					
 				//Determine total cost
-				discountAmount = itemPrice * discountRate;  	 //calculates discount amount
-				discountPrice = itemPrice - discountAmount;		 //calculates price after discount is applied
-				purchaseAmt = howMany * discountPrice;			  //calculates purchase amount based on discount price and quantity 
-				subTotal = subTotal + purchaseAmt;				    //calculates total before tax
+				discountAmount = itemPrice * discountRate;  	//calculates discount amount
+				discountPrice = itemPrice - discountAmount;	//calculates price after discount is applied
+				purchaseAmt = howMany * discountPrice;		//calculates purchase amount based on discount price and quantity 
+				subTotal = subTotal + purchaseAmt;		//calculates total before tax
 						
 				//display item receipt 
 				displayItemReceipt(itemName, itemPrice, discountName, discountRate, discountAmount, discountPrice, howMany, purchaseAmt, subTotal);
@@ -171,9 +171,9 @@ public class KassonMainClass
 				
 			}//end of while quit/reset loop
 						
-			tax = subTotal * TAX_RATE;  			    //calculates cost of tax
-			totalCost = subTotal + tax;				    //calculates total price after tax is applied
-			grandTotal = grandTotal + totalCost;	//calculates the sum of all totals 
+			tax = subTotal * TAX_RATE;  			//calculates cost of tax
+			totalCost = subTotal + tax;			//calculates total price after tax is applied
+			grandTotal = grandTotal + totalCost;		//calculates the sum of all totals 
 					
 			//display order total
 			displayOrderTotal(userName, subTotal, tax, totalCost);
@@ -230,15 +230,15 @@ public class KassonMainClass
 		System.out.println("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 		System.out.println("Item Receipt");
 		System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"); 
-		System.out.printf("%-16s%4s%-11s\n", "Item Name", "", borrowedItemName);					            //3 columns
+		System.out.printf("%-16s%4s%-11s\n", "Item Name", "", borrowedItemName);			           	//3 columns
 		System.out.printf("%-17s%4s%7.2f\n", "Original Price", "$", borrowedItemPrice);				        //3 columns
 		System.out.printf("%-16s%4s%-11s\n", "Discount Type", "", borrowedDiscountName);			        //3 columns
-		System.out.printf("%-17s%4s%6.1f%2s\n", "Dicount Rate", "", borrowedDiscountRate * 100, "%"); //4 columns			
-		System.out.printf("%-17s%4s%7.2f\n", "Discount Amount", "$", borrowedDiscountAmount);		      //3 columns
-		System.out.printf("%-17s%4s%7.2f\n", "Discount Price", "$", borrowedDiscountPrice);			      //3 columns
-		System.out.printf("%-17s%4s%7s\n", "Quantity", "", borrowedHowMany);						              //3 columns
-		System.out.printf("%-17s%4s%7.2f\n", "Purchase Amount", "$", borrowedPurchaseAmt);			      //3 columns
-		System.out.printf("%-17s%4s%7.2f\n", "Subtotal", "$", borrowedSubTotal);					            //3 columns
+		System.out.printf("%-17s%4s%6.1f%2s\n", "Dicount Rate", "", borrowedDiscountRate * 100, "%"); 			//4 columns			
+		System.out.printf("%-17s%4s%7.2f\n", "Discount Amount", "$", borrowedDiscountAmount);		      		//3 columns
+		System.out.printf("%-17s%4s%7.2f\n", "Discount Price", "$", borrowedDiscountPrice);			      	//3 columns
+		System.out.printf("%-17s%4s%7s\n", "Quantity", "", borrowedHowMany);				          	//3 columns
+		System.out.printf("%-17s%4s%7.2f\n", "Purchase Amount", "$", borrowedPurchaseAmt);			      	//3 columns
+		System.out.printf("%-17s%4s%7.2f\n", "Subtotal", "$", borrowedSubTotal);			        	//3 columns
 		System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"); 
 		 //End of item receipt
 			
@@ -250,10 +250,10 @@ public class KassonMainClass
 		System.out.println("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 		System.out.println("Order Total");
 		System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"); 
-		System.out.printf("%-16s%1s%6s\n", "User", "", borrowedUserName);						          //3 columns			
+		System.out.printf("%-16s%1s%6s\n", "User", "", borrowedUserName);				    	//3 columns			
 		System.out.printf("%-17s%4s%10.2f\n", "Subtotal", "$", borrowedSubTotal);			        //3 columns
-		System.out.printf("%-17s%4s%10.2f\n", "Tax", "$", borrowedTax);				  	            //3 columns
-		System.out.printf("%-17s%4s%10.2f\n", "Total Cost ", "$", borrowedTotalCost, "\n");	  //3 columns
+		System.out.printf("%-17s%4s%10.2f\n", "Tax", "$", borrowedTax);				  	       	//3 columns
+		System.out.printf("%-17s%4s%10.2f\n", "Total Cost ", "$", borrowedTotalCost, "\n");	  		//3 columns
 		System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"); 
 		//End of final report 
 			 
@@ -265,17 +265,17 @@ public class KassonMainClass
 		System.out.println("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 		System.out.println("Final Report");
 		System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"); 
-		System.out.printf("%-32s\n", "Count of discount types:");										//1 column
+		System.out.printf("%-32s\n", "Count of discount types:");							//1 column
 		System.out.printf("%-32s%3s%10d\n", DISCOUNT_NAME_MEMBER, "", borrowedMemberCount);				//3 columns
 		System.out.printf("%-32s%3s%10d\n", DISCOUNT_NAME_SENIOR, "", borrowedSeniorCount);				//3 columns
-		System.out.printf("%-32s%3s%10d\n", DISCOUNT_NAME_NONE, "", borrowedNoDisCount);				  //3 columns
+		System.out.printf("%-32s%3s%10d\n", DISCOUNT_NAME_NONE, "", borrowedNoDisCount);				//3 columns
 		System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"); 
-		System.out.printf("%-32s\n", "Count of items types:");											//1 column
-		System.out.printf("%-32s%3s%10d\n", ITEM_NAME_PREMIUM, "", borrowedPremiumCount);					//3 columns
-		System.out.printf("%-32s%3s%10d\n", ITEM_NAME_SPECIAL, "", borrowedSpecialCount);					//3 columns
-		System.out.printf("%-32s%3s%10d\n", ITEM_NAME_BASIC, "", borrowedBasicCount);						  //3 columns
+		System.out.printf("%-32s\n", "Count of items types:");								//1 column
+		System.out.printf("%-32s%3s%10d\n", ITEM_NAME_PREMIUM, "", borrowedPremiumCount);				//3 columns
+		System.out.printf("%-32s%3s%10d\n", ITEM_NAME_SPECIAL, "", borrowedSpecialCount);				//3 columns
+		System.out.printf("%-32s%3s%10d\n", ITEM_NAME_BASIC, "", borrowedBasicCount);					//3 columns
 		System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"); 
-		System.out.printf("%-32s%6s%7.2f\n", "Total ", "$", borrowedGrandTotal, "\n");				 	  //4 columns
+		System.out.printf("%-32s%6s%7.2f\n", "Total ", "$", borrowedGrandTotal, "\n");				 	//4 columns
 		System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"); 
 		//End of final report 
 	}//final report - end of void method 	
